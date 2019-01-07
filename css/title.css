@@ -1,0 +1,44 @@
+
+body {
+  background-color: black;
+}
+
+#title {
+  top: 46%; left: 48.5%;
+  width:12%; height: auto;
+  /* min-width: 15vw; */
+  z-index: 150;
+  opacity: 1;
+  cursor: default;
+  position: absolute;
+}
+
+#youT {
+  top: 45%; left: 33%;
+  width:2%; height: auto;
+  z-index:30;
+  position: absolute;
+}
+
+#inst {
+  top: 46.74%; left: 37.6%;
+  width:2.1%; height: auto;
+  z-index: 60;
+  position: absolute;
+}
+
+#twit {
+  top: 50.4%; left: 47.8%;
+  width:2.3%; height: auto;
+  z-index: 121;
+  position: absolute;
+  border-radius: 1%;
+}
+
+#email {
+  top: 50.2%; left: 43.8%;
+  width:2.6%; height: auto;
+  z-index: 111;
+  position: absolute;
+  border-radius: 1%;
+}

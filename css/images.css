@@ -1,0 +1,168 @@
+#temp{
+  top: 12%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 1px;
+  margin: auto;
+  z-index: 9999999;
+  position:absolute;
+  /* border-radius: 50%; */
+  background-color: rgb(255, 0, 0);
+}
+
+#i0 {
+  top: -21%; left: 9%;
+  z-index: 0;
+  width: 8%;
+  height: auto;
+  position: absolute;
+}
+#i1 {
+  top: 42%; left: 3%;
+  z-index: 30;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i2 {
+  top: 81%; left: -31%;
+  z-index: 60;
+  width: 7% ;
+  height: auto;
+  position: absolute;
+}
+#i3 {
+  top: -34%; left: -41%;
+  z-index: 90;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i4 {
+  top: 40%; left: 60%;
+  z-index: 120;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i5 {
+  top: 37%; left: 108%;
+  z-index: 00;
+  width: 21% ;
+  height: auto;
+  position: absolute;
+}
+#i6 {
+  top: 62%; left: 20%;
+  z-index: 30;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i7 {
+  top: 49%; left: 70%;
+  z-index: 60;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i8 {
+  top: 17%; left: 56%;
+  z-index: 90;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i9 {
+  top: 61%; left: 28%;
+  z-index: 00;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i10 {
+  top: 21%; left: 26%;
+  z-index: 30;
+  width: 19% ;
+  height: auto;
+  position: absolute;
+}
+#i11 {
+  top: -27%; left: 28%;
+  z-index: 60;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i12 {
+  top: 128%; left: 128%;
+  z-index: 90;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i13 {
+  top: 51%; left: 63%;
+  z-index: 120;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i14 {
+  top: 86%; left: 18%;
+  z-index: 0;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i15 {
+  top: -40%; left: 122%;
+  z-index: 30;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i16 {
+  top: -32%; left: 66%;
+  z-index: 60;
+  width: 23% ;
+  height: auto;
+  position: absolute;
+}
+#i17 {
+  top: 58%; left: 60%;
+  z-index: 90;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i18 {
+  top: 65%; left: 118%;
+  z-index: 120;
+  width: 11% ;
+  height: auto;
+  position: absolute;
+}
+#i19 {
+  top: 56%; left: 16%;
+  z-index: 0;
+  width: 21% ;
+  height: auto;
+  position: absolute;
+}
+#i20 {
+  top: 89%; left: 61%;
+  z-index: 30;
+  width: 24% ;
+  height: auto;
+  position: absolute;
+}
+#i21 {
+  top: 40%; left: 66%;
+  z-index: 60;
+  width: 13% ;
+  height: auto;
+  position: absolute;
+}
