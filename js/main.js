@@ -27,6 +27,7 @@ var photoGal = {
 		// edit the query selector below if you want to select another type of element
     // you can also add more - ex : querySelectorAll('img, video, h1')
 
+		// put all the images into an array
     this.imgArr = document.querySelectorAll('img')
 		this.N = this.imgArr.length;
     for (var i = 0; i < this.N; i++) this.O[i] = new this.addImage(i);
@@ -55,6 +56,7 @@ var photoGal = {
 
 		var thisImg = document.getElementById( this.obj.id )
 
+		// get the current position of the image
 			style = window.getComputedStyle(thisImg)
 			imgTop = style.getPropertyValue('top')
 			imgLeft = style.getPropertyValue('left')
