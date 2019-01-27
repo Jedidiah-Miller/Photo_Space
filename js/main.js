@@ -92,7 +92,8 @@ var photoGal = {
 					X = photoGal.newW * 5 + ( (this.x - photoGal.x - photoGal.curX) * d);
 					Y = photoGal.newH * 5 + ( (this.y - photoGal.y - photoGal.curY) * d);
           W = d * this.w;
-          H = d * this.h;
+					H = d * this.h;
+
 				this.obs.left = pixelFunc( X - W );
 				this.obs.top  = pixelFunc( Y - H );
 				this.obs.width = pixelFunc(W);
