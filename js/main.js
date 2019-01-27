@@ -57,10 +57,10 @@ var photoGal = {
 		var thisImg = document.getElementById( this.obj.id )
 
 		// get the current position of the image
-			style = window.getComputedStyle(thisImg)
-			imgTop = style.getPropertyValue('top')
-			imgLeft = style.getPropertyValue('left')
-			imgZ = style.getPropertyValue('z-index')
+		style = window.getComputedStyle(thisImg)
+		imgTop = style.getPropertyValue('top')
+		imgLeft = style.getPropertyValue('left')
+		imgZ = style.getPropertyValue('z-index')
 			
 		this.x = parseFloat(imgLeft)
 		this.y = parseFloat(imgTop)
@@ -69,10 +69,9 @@ var photoGal = {
     this.h = photoGal.imgArr[n].height;
     
 		if(!photoGal.imgArr[n].width) { // set width for elements that aren't images
-		// I used it for videos previously
+		// Rn this is for elements that aren't img
       this.w = thisImg.offsetWidth
       this.h = thisImg.offsetHeight
-
     }
 
 		this.obs = this.obj.style;
@@ -87,12 +86,12 @@ var photoGal = {
 			var f = 700 + this.z - photoGal.z;
 
 			if (f > 0) {
-				var
-					d = 1000 / f;
-					X = photoGal.newW * 5 + ( (this.x - photoGal.x - photoGal.curX) * d);
-					Y = photoGal.newH * 5 + ( (this.y - photoGal.y - photoGal.curY) * d);
-          W = d * this.w;
-					H = d * this.h;
+				var d = 1000 / f;
+
+				X = photoGal.newW * 5 + ( (this.x - photoGal.x - photoGal.curX) * d);
+				Y = photoGal.newH * 5 + ( (this.y - photoGal.y - photoGal.curY) * d);
+				W = d * this.w;
+				H = d * this.h;
 
 				this.obs.left = pixelFunc( X - W );
 				this.obs.top  = pixelFunc( Y - H );
@@ -130,8 +129,8 @@ document.onmousemove = function(e) {
 		// var i = photoGal.N;
 		// photoGal.O[i].adjust();
 		e = window.event;
-	photoGal.xMove = (e.x || e.clientX) - photoGal.newX - photoGal.newW * 2;
-	photoGal.yMove = (e.y || e.clientY) - photoGal.newY - photoGal.newH * 2;
+		photoGal.xMove = (e.x || e.clientX) - photoGal.newX - photoGal.newW * 2;
+		photoGal.yMove = (e.y || e.clientY) - photoGal.newY - photoGal.newH * 2;
 	}
 
 }
