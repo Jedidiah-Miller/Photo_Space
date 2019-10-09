@@ -1,13 +1,15 @@
+'use strict';
+
 window.onload = function() {
 	reconfigGal()
 	photoGal.init() // starts everything
 }
 
-pixelFunc = function (x) {
+function pixelFunc (x) {
 	return ''.concat(Math.round(x), 'px');
 }
 
-reconfigGal = function() {
+function reconfigGal() {
 	console.log('reconfigGal');
 	photoGal.config();
 }
@@ -23,10 +25,8 @@ var photoGal = {
 	},
 
 	init : function () {
-
 		// edit the query selector below if you want to select another type of element
     // you can also add more - ex : querySelectorAll('img, video, h1')
-
 		// put all the images into an array
     this.imgArr = document.querySelectorAll('img')
 		this.N = this.imgArr.length;
@@ -37,7 +37,6 @@ var photoGal = {
 	},
 
 	run : function () {
-
 		// four lines below this determine how much and how quickly the gallery adjusts
 		photoGal.curX += (photoGal.xMove - photoGal.curX) * .005;
 		photoGal.curY += (photoGal.yMove - photoGal.curY) * .005;
@@ -55,12 +54,11 @@ var photoGal = {
 		this.obj = photoGal.imgArr[n]; // each image obj
 
 		var thisImg = document.getElementById( this.obj.id )
-
 		// get the current position of the image
-		style = window.getComputedStyle(thisImg)
-		imgTop = style.getPropertyValue('top')
-		imgLeft = style.getPropertyValue('left')
-		imgZ = style.getPropertyValue('z-index')
+		var style = window.getComputedStyle(thisImg)
+		var imgTop = style.getPropertyValue('top')
+		var imgLeft = style.getPropertyValue('left')
+		var imgZ = style.getPropertyValue('z-index')
 			
 		this.x = parseFloat(imgLeft)
 		this.y = parseFloat(imgTop)
@@ -88,10 +86,10 @@ var photoGal = {
 			if (f > 0) {
 				var d = 1000 / f;
 
-				X = photoGal.newW * 5 + ( (this.x - photoGal.x - photoGal.curX) * d);
-				Y = photoGal.newH * 5 + ( (this.y - photoGal.y - photoGal.curY) * d);
-				W = d * this.w;
-				H = d * this.h;
+				var X = photoGal.newW * 5 + ( (this.x - photoGal.x - photoGal.curX) * d);
+				var Y = photoGal.newH * 5 + ( (this.y - photoGal.y - photoGal.curY) * d);
+				var W = d * this.w;
+				var H = d * this.h;
 
 				this.obs.left = pixelFunc( X - W );
 				this.obs.top  = pixelFunc( Y - H );
